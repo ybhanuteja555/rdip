@@ -1,0 +1,97 @@
+<!--Registration page-->
+
+
+
+<!DOCTYPE html>
+<html>
+<title>Home Page</title>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+}
+
+li{
+	float:left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+
+</style>
+
+<body>
+
+<fieldset>
+	
+	<a  href="https://www.iiit.ac.in/ "><img src="https://www.iiit.ac.in/img/iiit-new.png" style="float:top-left" width="150" height="100">
+	</a>
+
+	<a href="https://serc.iiit.ac.in/rdip" style="float:right; text-align: center; font-weight:bold;font-size: 30px;">RDIP
+	</a>
+
+	<ul>
+		<li style=""><a href="homepage.html" >Home</a></li>
+		<li style=""><a href="registration.html">Registration Form</a></li>
+	</ul>
+	<br>
+	<div style="font-weight:bold; text-align:center; float:left">
+	<form action="details.php" method="get">
+		<label>First Name :</label>&emsp;&emsp;
+		<input type="text" name="Name" id="Name" required><br><br>
+
+		<label>Email :</label>&emsp;&emsp;&emsp;&emsp;&emsp;
+		<input type="email" name="email" id="email" required><br><br>
+
+		<label>Phone Number :</label>
+		<input type="number" name="phone" id="phone" required><br><br>
+
+		<label>Gender :</label>&emsp;&emsp;&emsp;&emsp;
+		<input type="radio" id="Male" name="gender" value="Male" required>
+		<label for="Male">Male</label>
+		<input type="radio" id="Female" name="gender" value="Female">
+		<label for="Female">Female</label>
+		<input type="radio" id="Others" name="gender" value="Others">
+		<label for="Others">Others</label>
+		<br><br>		
+
+		<label>Reason for RDIP : </label>
+		<input type="checkbox" name="progrms[]" id="progrms" value="html">  <label>HTML</label>
+		<input type="checkbox" name="progrms[]" id="progrms" value="css">  <label>CSS</label>
+		<input type="checkbox" name="progrms[]" id="progrms" value="javascript">  <label>JavaScript</label>
+		<br><br>
+		
+		<label>College :</label>&emsp;&emsp;&emsp;&emsp;
+		<input type="text" name="clg" id="clg" required><br><br>
+		&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+		<input type="checkbox"required>&emsp;&emsp;&emsp;&emsp;&emsp;
+		<label>I declare above details given by me are true.</label><br><br><br>
+
+		<input type="submit" value="Submit">
+		<input type="reset">
+	</form>
+
+</div>
+
+
+	<br><br><br>
+
+
+</fieldset>
+
+</body>
+
+</html>
